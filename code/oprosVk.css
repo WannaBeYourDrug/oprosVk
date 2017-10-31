@@ -1,0 +1,71 @@
+.box {
+  border: 1px solid rgba(0,20,51,.12);
+  border-radius: 2px;
+  margin: 15px 0 7px;
+  padding: 1px 15px 14px;
+  background-color: #fff;
+  width: 500px;
+  font-size: 13px;
+}
+.h {
+  font-size: 12.5px;
+  padding: 11px 0 2px;
+  line-height: 16px;
+}
+.t {
+  float: right;
+  color: #939393;
+}
+.s {
+  color: #42648b;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+.p {
+  margin: 12px 0 0;
+  cursor: pointer;
+}
+.pt {
+  padding: 0 0 3px;
+}
+.per {
+  font-size: 12.5px;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  white-space: nowrap;
+  padding-top: 2px;
+  text-align: right;
+  float: right;
+  color: #222;
+  cursor: default;
+}
+.pool {
+  position: relative;
+  background-color: #f2f4f7;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.pb {
+  background: #dae1e8;
+  height: 20px;
+  -o-transition: width 200ms ease-out;
+  transition: width 200ms ease-out;
+}
+.pc {
+  font-size: 11.5px;
+  color: #55677d;
+  line-height: 20px;
+  text-align: center;
+  margin-top: -20px;
+}
+.b {
+  padding-top: 14px;
+  font-size: 12.5px;
+}
+.a {
+  color: #939393;
+  float: right;
+}

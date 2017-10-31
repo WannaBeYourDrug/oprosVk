@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>OprosVK</title>
+  <link rel="shortcut icon" href="https://gdmone.ru/main/public/images/favicons/favicon.png">
+	<link rel="apple-touch-icon" href="https://gdmone.ru/main/public/images/favicons/apple-touch-icon.png">
+  <meta name="author" content="https://vk.com/wannabeyourdrug"/>
+  <meta property="og:title" content="OprosVK"/>
+  <meta property="og:url" content="https://projects.gdmone.ru/oprosVk"/>
+  <meta property="og:site_name" content="OprosVK"/>
+  <meta property="og:see_also" content="https://gdmone.ru"/>
+  <meta property="og:description" content="Симулирует опрос в ВКонтакте с задаными параметрами"/>
+  <meta name="description" content="Симулирует опрос в ВКонтакте с задаными параметрами"/>
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+  <link rel="stylesheet" type="text/css" href="code/oprosVk.css">
+  <script type="text/javascript" src="src/jquery.js"></script>
+  <script type="text/javascript" src="code/jquery.oprosVk.js"></script>
+</head>
+<body>
+  <div id="constructor">
+    <form id="params">
+      <div>
+        Тип голосования:
+        <label>
+          <input type="radio" name="type" value="open" checked="checked"> Открытое
+        </label>
+        <label>
+          <input type="radio" name="type" value="anon"> Анонимное
+        </label>
+      </div>
+      <div>
+        Тема опроса:
+        <input type="text" name="subject" required="required">
+      </div>
+      <div>
+        <table cellspacing="10">
+          <thead>
+            <tr>
+              <th>Номер</th>
+              <th>Вариант</th>
+              <th>Кол-во проголосовавших</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><input class="optiontext" type="text"></td>
+              <td><input class="optionval" type="number" value="0"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr style="text-align: right;">
+              <th colspan="3"><a href="javascript:addOption()">Добавить вариант ответа</a></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Построить">
+      </div>
+    </form>
+    <a href="javascript:r();">Обновить</a>
+  </div>
+  <div id="graph">Здесь будет результат</div>
+  <script>
+    var c = 1;
+    function addOption() {
+        c++, $("tbody").append("<tr><td>" + c + '</td><td><input class="optiontext" type="text"></td><td><input class="optionval" type="number" value="0"></td></tr>')
+    }
+    function r() {
+        location.reload()
+    }
+  </script>
+  <script>
+    $('#params').oprosVk({
+      type: 'input',
+      result: '#graph'
+    });
+  </script>
+</body>
+</html>
