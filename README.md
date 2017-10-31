@@ -1,6 +1,6 @@
 # oprosVk
 
-![ExamlpeScreenshot](http://prntscr.com/h4l3qs)
+![ExamlpeScreenshot](https://image.prntscr.com/image/Q3JXZkmOQ9umi341kv9F2w.png)
 
 Плагин для **jQuery**. Симулирует опрос ВКонтакте.
 
